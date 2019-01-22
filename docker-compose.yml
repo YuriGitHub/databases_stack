@@ -18,10 +18,14 @@ services:
     restart: always
     ports:
       - "6379:6379"
+    volumes:
+      - "./redis/data/:/data/"
 
   mongo:
     image: mongo
     restart: always
+    volumes:
+      - "./mongo/data/:/data/db/"
     environment:
       MONGO_INITDB_ROOT_USERNAME: mongouser
       MONGO_INITDB_ROOT_PASSWORD: mongopass
