@@ -1,6 +1,6 @@
 # Mongo Settings
 
-### User  for specific database
+### User for specific database
 ```js
 
 use identyhub_shared_user-test
