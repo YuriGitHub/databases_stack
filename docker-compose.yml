@@ -43,6 +43,12 @@ services:
     volumes:
       - "./mysql/:/var/lib/mysql/"
 
+  elasticsearch:
+    image: elasticsearch:2.3 
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+
   adminer:
     image: adminer
     restart: always
